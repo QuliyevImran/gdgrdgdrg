@@ -2,13 +2,11 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 import openai
 import os
-def log_to_db(user_id, name, job):
-    cursor.execute("INSERT INTO recommendations (user_id, name, job) VALUES (?, ?, ?)", (user_id, name, job))
-    conn.commit()
 
 
-TELEGRAM_TOKEN = "8093785349:AAFqxk0AyTV4md4mgbXjFLYIP3bNPWWZbDA"
-OPENAI_API_KEY = "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"
+
+TELEGRAM_TOKEN = ""
+OPENAI_API_KEY = ""
 
 openai.api_key = OPENAI_API_KEY
 
